@@ -6,14 +6,17 @@ from doubly_linked_list import DoublyLinkedList
 class Queue:
     def __init__(self):
         self.size = 0
+        #First in, first out
         # Why is our DLL a good choice to store our elements?
-        # self.storage = ?
+        # A queue inserts elements from the front and removes from the back,s
+        # DLL is an efficient data structure to implement this bc RV traversal ability
+        self.storage = DoublyLinkedList()
 
     def enqueue(self, value):
-        pass
+        self.storage.add_to_head(value)
 
     def dequeue(self):
-        pass
+        self.storage.add_to_head(value)
 
     def len(self):
-        pass
+        return self.storage.length
