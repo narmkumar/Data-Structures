@@ -16,7 +16,7 @@ class Queue:
         self.storage.add_to_head(value)
 
     def dequeue(self):
-        self.storage.add_to_head(value)
+        self.storage.remove_from_tail()
 
     def len(self):
         return self.storage.length
